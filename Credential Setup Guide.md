@@ -32,8 +32,8 @@ notepad config.json
 
 ```json
 {
-  "ipinfo_token": "f97aa0477bc627",
-  "user_agent": "crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)",
+  "ipinfo_token": "Your Ipinfo Token",
+  "user_agent": "crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)",
   "default_sleep": 0.5,
   "http_timeout": 60.0,
   "http_retries": 3,
@@ -53,10 +53,10 @@ notepad config.json
 ```ini
 [DEFAULT]
 # IPinfo.io API token (required)
-ipinfo_token = f97aa0477bc627
+ipinfo_token = Your Ipinfo Token
 
 # User agent for HTTP requests
-user_agent = crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)
+user_agent = crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)
 
 # Rate limiting
 default_sleep = 0.5
@@ -81,30 +81,30 @@ Se preferisci non avere file di configurazione:
 
 ### **Linux/macOS:**
 ```bash
-export CRT_IPINFO_TOKEN="f97aa0477bc627"
+export CRT_IPINFO_TOKEN="Your Ipinfo Token"
 export CRT_LOG_LEVEL="INFO"
 export CRT_OUTPUT_DIR="results"
 
 # Poi esegui il tool
-python crt-hosts-enricher.py --domain example.com -o analysis
+python crt_hosts_enricher.py --domain example.com -o analysis
 ```
 
 ### **Windows:**
 ```cmd
-set CRT_IPINFO_TOKEN=f97aa0477bc627
+set CRT_IPINFO_TOKEN=Your Ipinfo Token
 set CRT_LOG_LEVEL=INFO
 set CRT_OUTPUT_DIR=results
 
-python crt-hosts-enricher.py --domain example.com -o analysis
+python crt_hosts_enricher.py --domain example.com -o analysis
 ```
 
 ### **Windows PowerShell:**
 ```powershell
-$env:CRT_IPINFO_TOKEN="f97aa0477bc627"
+$env:CRT_IPINFO_TOKEN="Your Ipinfo Token"
 $env:CRT_LOG_LEVEL="INFO"
 $env:CRT_OUTPUT_DIR="results"
 
-python crt-hosts-enricher.py --domain example.com -o analysis
+python crt_hosts_enricher.py --domain example.com -o analysis
 ```
 
 ## 🔍 Verifica Configurazione
@@ -147,7 +147,7 @@ Il tool cerca le configurazioni in questo ordine:
 
 1. **File specificato**: `--config myconfig.json`
 2. **File locali**: `config.json` o `config.ini` nella directory corrente
-3. **File utente**: `~/.crt-enricher.json` o `~/.crt-enricher.ini`
+3. **File utente**: `~/.crt_enricher.json` o `~/.crt_enricher.ini`
 4. **Variabili ambiente**: `CRT_IPINFO_TOKEN`, `CRT_LOG_LEVEL`, etc.
 5. **Default**: Valori predefiniti (fallback)
 
@@ -170,7 +170,7 @@ Il tool cerca le configurazioni in questo ordine:
 ### **Dopo aver configurato, testa:**
 ```bash
 # Test veloce
-python crt-hosts-enricher.py --domain google.com -o test --verbose
+python crt_hosts_enricher.py --domain google.com -o test --verbose
 
 # Dovresti vedere:
 [CONFIG] Configuration loaded successfully

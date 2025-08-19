@@ -1,13 +1,13 @@
 # CRT Hosts Enricher
 
 **Giovanni Guarino** - *Creator and Maintainer*  
-📧 Email: tua.email@example.com  
+📧 Email: giovannni.guarino.ita@gmail.com  
 🐙 GitHub: [@gioguanuo](https://github.com/gioguanuo)  
-💼 LinkedIn: [Il tuo profilo]
+💼 LinkedIn: https://www.linkedin.com/checkpoint/challengesV2/AQFRIyZpS82tnQAAAZjDYpMKg0_xL3sqes9EQ-KkPoeewWL4wubCUxC6cSj278tIYpFEuMLaPwEtSBmKQpuCprBthcSQlvd0dQ?ut=0We_pCJWdXuHU1
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE]file for details.
 
 **Copyright © 2024 Giovanni Guarino. All rights reserved.**
 
@@ -38,8 +38,8 @@ A powerful command-line tool that extracts hostnames from SSL certificates via [
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/crt-hosts-enricher.git
-   cd crt-hosts-enricher
+   git clone https://github.com/gioguanuo/crt_hosts_enricher.git
+   cd crt_hosts_enricher
    ```
 
 2. **Install dependencies:**
@@ -67,26 +67,26 @@ A powerful command-line tool that extracts hostnames from SSL certificates via [
 
 ```bash
 # Analyze a domain
-python crt-hosts-enricher.py --domain example.com -o analysis
+python crt_hosts_enricher.py --domain example.com -o analysis
 
 # Use a crt.sh URL (paste from browser)
-python crt-hosts-enricher.py --crt-url "https://crt.sh/?q=example.com" -o analysis
+python crt_hosts_enricher.py --crt-url "https://crt.sh/?q=example.com" -o analysis
 
 # Only include resolvable hosts with public IPs
-python crt-hosts-enricher.py --domain example.com --only-resolvable --public-only -o analysis
+python crt_hosts_enricher.py --domain example.com --only-resolvable --public-only -o analysis
 ```
 
 ### Advanced Options
 
 ```bash
 # Verbose logging with custom log file
-python crt-hosts-enricher.py --domain example.com -o analysis --verbose --log-file custom.log
+python crt_hosts_enricher.py --domain example.com -o analysis --verbose --log-file custom.log
 
 # Adjust timeouts and rate limiting
-python crt-hosts-enricher.py --domain example.com -o analysis --http-timeout 30 --sleep 1.0
+python crt_hosts_enricher.py --domain example.com -o analysis --http-timeout 30 --sleep 1.0
 
 # Maximum verbosity for debugging
-python crt-hosts-enricher.py --domain example.com -o analysis -v --http-retries 5
+python crt_hosts_enricher.py --domain example.com -o analysis -v --http-retries 5
 ```
 
 ## 📊 Output Files
@@ -109,7 +109,7 @@ hostname,ip,cidr,asn,as_name,as_domain,country,continent
 api.example.com,203.0.113.1,203.0.113.0/24,AS64496,Example Corp,example.net,US,North America
 ```
 
-### 3. Log File (`logs/crt-enricher-YYYYMMDD.log`)
+### 3. Log File (`logs/crt_enricher-YYYYMMDD.log`)
 Detailed execution log with debugging information, API responses, and error details.
 
 ## 🔧 Command Line Options

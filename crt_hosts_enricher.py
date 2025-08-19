@@ -9,9 +9,9 @@ GitHub: https://github.com/gioguanuo/crt_hosts_enricher
 License: MIT
 Version: 2.1
 
-"""
+
 Extract hostnames from SSL certificates and enrich with network intelligence.
-"""
+
 
 __author__ = "Giovanni Guarino"
 __copyright__ = "Copyright 2025, Giovanni Guarino"
@@ -20,7 +20,7 @@ __version__ = "2.1"
 __maintainer__ = "Giovanni Guarino"
 __email__ = "giovanni.guarino.ita@gmail.com"
 __status__ = "Production"
-
+"""
 import argparse
 import csv
 import json
@@ -37,7 +37,7 @@ from pathlib import Path
 
 # ================== CONFIG ==================
 IPINFO_TOKEN = "f97aa0477bc627"   # Your IPinfo token
-USER_AGENT = "crt-hosts-enricher/2.1 (+https://crt.sh/)"
+USER_AGENT = "crt_hosts_enricher/2.1 (+https://crt.sh/)"
 DEFAULT_SLEEP = 0.5  # Pause between ipinfo calls to avoid rate-limit
 VERSION = "2.1"
 # ===========================================
@@ -399,7 +399,7 @@ Version: {VERSION}
     parser.add_argument("-o", "--output", required=True,
                        help="Output CSV filename (e.g., Analysis-MeDirect or Analysis-MeDirect.csv)")
     parser.add_argument("--log-file",
-                       help="Log file path (default: logs/crt-enricher-YYYYMMDD.log)")
+                       help="Log file path (default: logs/crt_enricher-YYYYMMDD.log)")
     parser.add_argument("--verbose", "-v", action="store_true",
                        help="Enable verbose logging (debug level)")
     parser.add_argument("--version", action="version", version=f"%(prog)s {VERSION}")
@@ -416,7 +416,7 @@ Version: {VERSION}
     # Setup logging
     if not args.log_file:
         timestamp = datetime.now().strftime("%Y%m%d")
-        args.log_file = f"logs/crt-enricher-{timestamp}.log"
+        args.log_file = f"logs/crt_enricher-{timestamp}.log"
     
     logger = setup_logging(args.log_file, args.verbose)
     

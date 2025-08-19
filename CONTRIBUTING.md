@@ -42,8 +42,8 @@ Thank you for your interest in contributing to CRT Hosts Enricher! This document
 
 ```bash
 # Clone your fork
-git clone https://github.com/yourusername/crt-hosts-enricher.git
-cd crt-hosts-enricher
+git clone https://github.com/gioguanuo/crt_hosts_enricher.git
+cd crt_hosts_enricher
 
 # Create virtual environment
 python -m venv venv
@@ -64,7 +64,7 @@ pre-commit install
 python -m pytest
 
 # Run with coverage
-python -m pytest --cov=crt-hosts-enricher
+python -m pytest --cov=crt_hosts_enricher
 
 # Run specific test file
 python -m pytest tests/test_specific.py
@@ -77,13 +77,13 @@ python -m pytest -v
 
 ```bash
 # Format code with black
-black crt-hosts-enricher.py
+black crt_hosts_enricher.py
 
 # Check style with flake8
-flake8 crt-hosts-enricher.py
+flake8 crt_hosts_enricher.py
 
 # Type checking with mypy
-mypy crt-hosts-enricher.py
+mypy crt_hosts_enricher.py
 ```
 
 ## 📝 Code Style Guidelines

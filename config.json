@@ -1,6 +1,6 @@
 {
   "ipinfo_token": "f97aa0477bc627",
-  "user_agent": "crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)",
+  "user_agent": "crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)",
   "default_sleep": 0.5,
   "http_timeout": 60.0,
   "http_retries": 3,

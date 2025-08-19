@@ -35,7 +35,7 @@ class Config:
         return {
             # API Configuration
             'ipinfo_token': '',
-            'user_agent': 'crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)',
+            'user_agent': 'crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)',
             
             # Rate Limiting
             'default_sleep': 0.5,
@@ -45,7 +45,7 @@ class Config:
             
             # Logging
             'log_level': 'INFO',
-            'log_file_pattern': 'logs/crt-enricher-{date}.log',
+            'log_file_pattern': 'logs/crt_enricher_{date}.log',
             'colored_output': True,
             'max_log_size': 10 * 1024 * 1024,  # 10MB
             'log_backup_count': 5,
@@ -103,12 +103,12 @@ class Config:
         config_paths.extend([
             'config.json',
             'config.ini',
-            'crt-enricher.json',
-            'crt-enricher.ini',
-            os.path.expanduser('~/.crt-enricher.json'),
-            os.path.expanduser('~/.crt-enricher.ini'),
-            '/etc/crt-enricher.json',
-            '/etc/crt-enricher.ini'
+            'crt_enricher.json',
+            'crt_enricher.ini',
+            os.path.expanduser('~/.crt_enricher.json'),
+            os.path.expanduser('~/.crt_enricher.ini'),
+            '/etc/crt_enricher.json',
+            '/etc/crt_enricher.ini'
         ])
         
         for config_path in config_paths:
@@ -286,7 +286,7 @@ def create_example_config_files():
     # JSON example
     json_config = {
         "ipinfo_token": "your_ipinfo_token_here",
-        "user_agent": "crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)",
+        "user_agent": "crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)",
         "default_sleep": 0.5,
         "http_timeout": 60.0,
         "http_retries": 3,
@@ -308,7 +308,7 @@ def create_example_config_files():
 ipinfo_token = your_ipinfo_token_here
 
 # User agent for HTTP requests
-user_agent = crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)
+user_agent = crt_hosts_enricher/2.1 (+https://github.com/gioguanuo/crt_hosts_enricher)
 
 # Rate limiting
 default_sleep = 0.5

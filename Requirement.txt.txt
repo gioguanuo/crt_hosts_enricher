@@ -1,0 +1,20 @@
+# CRT Hosts Enricher - Requirements
+# 
+# This tool uses only Python standard library modules.
+# No external dependencies are required for basic functionality.
+#
+# The following are optional development dependencies:
+
+# Development and testing (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.991
+
+# Documentation (optional)
+mkdocs>=1.4.0
+mkdocs-material>=8.5.0
+
+# Note: The main script (crt-hosts-enricher.py) requires no external packages
+# and works with Python 3.6+ standard library only.

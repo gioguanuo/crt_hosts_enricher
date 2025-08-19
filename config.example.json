@@ -1,0 +1,13 @@
+{
+  "ipinfo_token": "your_ipinfo_token_here",
+  "user_agent": "crt-hosts-enricher/2.1 (+https://github.com/yourusername/crt-hosts-enricher)",
+  "default_sleep": 0.5,
+  "http_timeout": 60.0,
+  "http_retries": 3,
+  "log_level": "INFO",
+  "output_dir": "results",
+  "only_resolvable": false,
+  "public_only": false,
+  "colored_output": true,
+  "cache_enabled": true
+}

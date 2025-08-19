@@ -1,5 +1,16 @@
 # CRT Hosts Enricher
 
+**Giovanni Guarino** - *Creator and Maintainer*  
+📧 Email: tua.email@example.com  
+🐙 GitHub: [@gioguanuo](https://github.com/gioguanuo)  
+💼 LinkedIn: [Il tuo profilo]
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Copyright © 2024 Giovanni Guarino. All rights reserved.**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 

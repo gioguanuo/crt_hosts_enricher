@@ -3,10 +3,23 @@
 CRT Hosts Enricher - SSL Certificate Analysis Tool
 Extracts hostnames from crt.sh and enriches with IP, ASN, and geolocation data.
 
-Author: Your Name
-Version: 2.1
+Author: Giovanni Guarino
+Email: tua.email@example.com
+GitHub: https://github.com/gioguanuo/crt_hosts_enricher
 License: MIT
+Version: 2.1
+
 """
+Extract hostnames from SSL certificates and enrich with network intelligence.
+"""
+
+__author__ = "Giovanni Guarino"
+__copyright__ = "Copyright 2025, Giovanni Guarino"
+__license__ = "MIT"
+__version__ = "2.1"
+__maintainer__ = "Giovanni Guarino"
+__email__ = "giovanni.guarino.ita@gmail.com"
+__status__ = "Production"
 
 import argparse
 import csv
